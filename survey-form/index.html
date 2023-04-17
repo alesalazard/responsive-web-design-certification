@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Pet Academy Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve our platform
+    </p>
+    <form id="survey-form">
+      <label id="name-label">
+        Name <input id="name" type="text" placeholder="Your name" required />
+      </label>
+      <label id="email-label">
+        Email
+        <input id="email" type="email" placeholder="Your email" required />
+      </label>
+      <label id="number-label">
+        Age(optional)
+        <input id="number" type="number" placeholder="Age" min="13" max="99" />
+      </label>
+      <select id="dropdown">
+        <option>Select current species</option>
+        <option>I'm a cat</option>
+        <option>I'm a dog</option>
+        <option>I'm a bird</option>
+      </select>
+      <p>What are your actual role?</p>
+      <label>
+        <input type="radio" name="relation" value="teacher" class="inline" />
+        Teacher</label
+      >
+      <label>
+        <input type="radio" name="relation" value="student" class="inline" />
+        Student</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="relation"
+          value="administrative"
+          class="inline"
+        />
+        Administrative</label
+      >
+      <p>When do you visit us?</p>
+      <label><input type="checkbox" value="1" class="inline" /> Breakfast</label>
+      <label><input type="checkbox" value="2" class="inline" /> Lunch</label>
+      <label><input type="checkbox" value="3" class="inline" /> Dinner</label>
+      <label for="about">Tell us about You
+        <textarea id="about" name="about" rows="3" cols="30"></textarea>
+      </label>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
